@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nygen Docs · Open-source single-cell tools</title>
+  <meta name="description" content="Documentation for Nygen's open-source single-cell tools: CyteArc for out-of-core analysis up to 100M+ cells, and CyteType for evidence-backed cell type annotation.">
+  <link rel="canonical" href="https://docs.nygen.io/">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="Plain-text index for language models">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nygen Docs">
+  <meta property="og:title" content="Nygen Docs · Open-source single-cell tools">
+  <meta property="og:description" content="Documentation for CyteArc, CyteType, CyteTypeR, and CyteOnto: single-cell analysis and cell type annotation from Nygen Analytics.">
+  <meta property="og:url" content="https://docs.nygen.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@NygenAnalytics">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,200..600&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.nygen.io/#organization",
+        "name": "Nygen Analytics AB",
+        "url": "https://www.nygen.io/",
+        "logo": "https://docs.nygen.io/assets/nygen-logo.png",
+        "sameAs": [
+          "https://github.com/NygenAnalytics",
+          "https://www.linkedin.com/company/nygen",
+          "https://x.com/NygenAnalytics",
+          "https://www.youtube.com/@NygenAnalytics"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://docs.nygen.io/#website",
+        "name": "Nygen Docs",
+        "url": "https://docs.nygen.io/",
+        "publisher": { "@id": "https://www.nygen.io/#organization" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "CyteArc",
+        "description": "Out-of-core single-cell analysis in Python for RNA, ATAC, protein, and multi-omic data, scaling to 100M+ cells with built-in provenance.",
+        "url": "https://docs.nygen.io/CyteArc/",
+        "codeRepository": "https://github.com/NygenAnalytics/CyteArc",
+        "programmingLanguage": "Python",
+        "author": { "@id": "https://www.nygen.io/#organization" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "CyteType",
+        "description": "Evidence-backed cell type annotation for Scanpy and AnnData using specialised AI agents.",
+        "url": "https://www.nygen.io/docs/cytetype",
+        "codeRepository": "https://github.com/NygenAnalytics/CyteType",
+        "programmingLanguage": "Python",
+        "author": { "@id": "https://www.nygen.io/#organization" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "CyteTypeR",
+        "description": "CyteType cell type annotation for Seurat objects in R.",
+        "codeRepository": "https://github.com/NygenAnalytics/CyteTypeR",
+        "programmingLanguage": "R",
+        "author": { "@id": "https://www.nygen.io/#organization" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "CyteOnto",
+        "description": "Semantic comparison of cell type labels in Cell Ontology space, for benchmarking annotation methods.",
+        "codeRepository": "https://github.com/NygenAnalytics/CyteOnto",
+        "programmingLanguage": "Python",
+        "author": { "@id": "https://www.nygen.io/#organization" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="https://www.nygen.io/" aria-label="Nygen Analytics home">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="/assets/nygen-logo-white.png">
+          <img src="/assets/nygen-logo.png" alt="Nygen" width="116" height="26">
+        </picture>
+      </a>
+      <nav aria-label="Elsewhere">
+        <a class="icon" href="https://github.com/NygenAnalytics" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"/></svg>
+        </a>
+        <a class="icon" href="https://discord.gg/V6QFM4AN" aria-label="Discord" title="Discord">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Open-source tools for single-cell biology</h1>
+        <p class="lede">Guides, API references, and source code for the analysis and annotation software we build at Nygen Analytics.</p>
+      </section>
+
+      <ul class="projects">
+        <li class="card">
+          <div class="card-head">
+            <h2><a href="https://docs.nygen.io/CyteArc/">CyteArc</a></h2>
+            <span class="tag">Python</span>
+          </div>
+          <p>Out-of-core analysis for single-cell RNA, ATAC, protein, and multi-omic data. Scales to 100M+ cells, and every result traces back to the cells and parameters behind it.</p>
+          <div class="install"><code>pip install cytearc</code><button class="copy" type="button" hidden>Copy</button></div>
+          <div class="links">
+            <a class="primary" href="https://docs.nygen.io/CyteArc/">Documentation →</a>
+            <a href="https://github.com/NygenAnalytics/CyteArc">GitHub</a>
+            <a href="https://pypi.org/project/cytearc/">PyPI</a>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-head">
+            <h2><a href="https://www.nygen.io/docs/cytetype">CyteType</a></h2>
+            <span class="tag">Python</span>
+          </div>
+          <p>Evidence-backed cell type annotation for Scanpy and AnnData. Each cluster gets a cell type, a Cell Ontology ID, a confidence score, and an interactive report.</p>
+          <div class="install"><code>pip install cytetype</code><button class="copy" type="button" hidden>Copy</button></div>
+          <div class="links">
+            <a class="primary" href="https://www.nygen.io/docs/cytetype">Documentation →</a>
+            <a href="https://github.com/NygenAnalytics/CyteType">GitHub</a>
+            <a href="https://www.biorxiv.org/content/10.1101/2025.11.06.686964v1">Paper</a>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-head">
+            <h2><a href="https://github.com/NygenAnalytics/CyteTypeR/blob/master/docs/get-started.md">CyteTypeR</a></h2>
+            <span class="tag">R</span>
+          </div>
+          <p>The CyteType annotation workflow for Seurat objects, with the same evidence and reports.</p>
+          <div class="install"><code>devtools::install_github("NygenAnalytics/CyteTypeR")</code><button class="copy" type="button" hidden>Copy</button></div>
+          <div class="links">
+            <a class="primary" href="https://github.com/NygenAnalytics/CyteTypeR/blob/master/docs/get-started.md">Get started →</a>
+            <a href="https://github.com/NygenAnalytics/CyteTypeR">GitHub</a>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-head">
+            <h2><a href="https://github.com/NygenAnalytics/CyteOnto#readme">CyteOnto</a></h2>
+            <span class="tag">Hosted API</span>
+          </div>
+          <p>Semantic comparison of cell type labels in Cell Ontology space, for benchmarking annotation methods beyond exact string matches. No API key needed.</p>
+          <div class="install"><code>https://cyteonto.nygen.io/compare</code><button class="copy" type="button" hidden>Copy</button></div>
+          <div class="links">
+            <a class="primary" href="https://github.com/NygenAnalytics/CyteOnto#readme">Read the guide →</a>
+            <a href="https://github.com/NygenAnalytics/CyteOnto">GitHub</a>
+          </div>
+        </li>
+      </ul>
+
+      <p class="machine">Using an AI assistant? Point it at <a href="/llms.txt"><code>docs.nygen.io/llms.txt</code></a>. It indexes every project here and links to plain-text versions of the CyteArc documentation.</p>
+    </main>
+
+    <footer class="foot">
+      <span>© Nygen Analytics AB · Medicon Village, Lund, Sweden</span>
+      <nav aria-label="Contact">
+        <a href="mailto:contact@nygen.io">contact@nygen.io</a>
+        <a href="https://www.linkedin.com/company/nygen">LinkedIn</a>
+        <a href="https://x.com/NygenAnalytics">X</a>
+        <a href="https://www.youtube.com/@NygenAnalytics">YouTube</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script>
+    document.querySelectorAll(".copy").forEach(function (button) {
+      if (!navigator.clipboard) return;
+      button.hidden = false;
+      button.addEventListener("click", function () {
+        var text = button.previousElementSibling.textContent;
+        navigator.clipboard.writeText(text).then(function () {
+          button.textContent = "Copied";
+          setTimeout(function () { button.textContent = "Copy"; }, 1500);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
