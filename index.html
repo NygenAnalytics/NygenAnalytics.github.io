@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nygen Docs · Open-source single-cell tools</title>
-  <meta name="description" content="Documentation for Nygen's open-source single-cell tools: CyteArc for out-of-core analysis up to 100M+ cells, and CyteType for evidence-backed cell type annotation.">
+  <meta name="description" content="Documentation for Nygen's open-source single-cell tools: CyteArc for out-of-core analysis up to 100M+ cells, CyteBase for public datasets ready to analyze, and CyteType for evidence-backed cell type annotation.">
   <link rel="canonical" href="https://docs.nygen.io/">
   <link rel="icon" href="/assets/favicon.png" type="image/png">
   <link rel="alternate" type="text/plain" href="/llms.txt" title="Plain-text index for language models">
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Nygen Docs">
   <meta property="og:title" content="Nygen Docs · Open-source single-cell tools">
-  <meta property="og:description" content="Documentation for CyteArc, CyteType, CyteTypeR, and CyteOnto: single-cell analysis and cell type annotation from Nygen Analytics.">
+  <meta property="og:description" content="Documentation for CyteArc, CyteBase, CyteType, CyteTypeR, and CyteOnto: single-cell analysis, public datasets, and cell type annotation from Nygen Analytics.">
   <meta property="og:url" content="https://docs.nygen.io/">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@NygenAnalytics">
@@ -52,6 +52,15 @@
         "description": "Out-of-core single-cell analysis in Python for RNA, ATAC, protein, and multi-omic data, scaling to 100M+ cells with built-in provenance.",
         "url": "https://docs.nygen.io/CyteArc/",
         "codeRepository": "https://github.com/NygenAnalytics/CyteArc",
+        "programmingLanguage": "Python",
+        "author": { "@id": "https://www.nygen.io/#organization" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "CyteBase",
+        "description": "A searchable catalog of public single-cell datasets from CZ CELLxGENE Discover, published as cloud-hosted CyteArc DataStores that open without downloading.",
+        "url": "https://docs.nygen.io/CyteBase/",
+        "codeRepository": "https://github.com/NygenAnalytics/CyteBase",
         "programmingLanguage": "Python",
         "author": { "@id": "https://www.nygen.io/#organization" }
       },
@@ -126,6 +135,20 @@
 
         <li class="card">
           <div class="card-head">
+            <h2><a href="https://docs.nygen.io/CyteBase/">CyteBase</a></h2>
+            <span class="tag">Python</span>
+          </div>
+          <p>A searchable catalog of public single-cell datasets, published as CyteArc DataStores on Hugging Face. Search by tissue, disease, or cell type, then open or mount a dataset without downloading it.</p>
+          <div class="install"><code>pip install cytebase</code><button class="copy" type="button" hidden>Copy</button></div>
+          <div class="links">
+            <a class="primary" href="https://docs.nygen.io/CyteBase/">Documentation →</a>
+            <a href="https://github.com/NygenAnalytics/CyteBase">GitHub</a>
+            <a href="https://pypi.org/project/cytebase/">PyPI</a>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-head">
             <h2><a href="https://www.nygen.io/docs/cytetype">CyteType</a></h2>
             <span class="tag">Python</span>
           </div>
@@ -165,7 +188,7 @@
         </li>
       </ul>
 
-      <p class="machine">Using an AI assistant? Point it at <a href="/llms.txt"><code>docs.nygen.io/llms.txt</code></a>. It indexes every project here and links to plain-text versions of the CyteArc documentation.</p>
+      <p class="machine">Using an AI assistant? Point it at <a href="/llms.txt"><code>docs.nygen.io/llms.txt</code></a>. It indexes every project here and links to plain-text versions of the CyteArc and CyteBase documentation.</p>
     </main>
 
     <footer class="foot">

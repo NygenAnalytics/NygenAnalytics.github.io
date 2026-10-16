@@ -4,3 +4,4 @@ Allow: /
 # One line per project hosted on docs.nygen.io.
 Sitemap: https://docs.nygen.io/sitemap.xml
 Sitemap: https://docs.nygen.io/CyteArc/sitemap.xml
+Sitemap: https://docs.nygen.io/CyteBase/sitemap.xml

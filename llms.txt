@@ -1,12 +1,13 @@
 # Nygen Docs
 
-> Documentation for the open-source single-cell biology tools built by Nygen Analytics, an applied AI lab in Lund, Sweden. CyteArc analyses single-cell RNA, ATAC, protein, and multi-omic data out of core, up to 100M+ cells. CyteType (Python) and CyteTypeR (R) annotate cell types with evidence and Cell Ontology IDs. CyteOnto compares cell type labels in Cell Ontology space.
+> Documentation for the open-source single-cell biology tools built by Nygen Analytics, an applied AI lab in Lund, Sweden. CyteArc analyses single-cell RNA, ATAC, protein, and multi-omic data out of core, up to 100M+ cells. CyteBase publishes public single-cell datasets as cloud-hosted CyteArc DataStores. CyteType (Python) and CyteTypeR (R) annotate cell types with evidence and Cell Ontology IDs. CyteOnto compares cell type labels in Cell Ontology space.
 
-CyteArc publishes its own llms.txt, which links to plain-text versions of every documentation page. The other projects link to their main documentation or README.
+CyteArc and CyteBase publish their own llms.txt files, which link to plain-text versions of every documentation page. The other projects link to their main documentation or README.
 
 ## Projects
 
 - [CyteArc](https://docs.nygen.io/CyteArc/llms.txt): out-of-core single-cell analysis in Python for RNA, ATAC, protein, and multi-omic data, with provenance on every result. Install with `pip install cytearc`.
+- [CyteBase](https://docs.nygen.io/CyteBase/llms.txt): searchable catalog of public single-cell datasets from CZ CELLxGENE Discover, published as cloud-hosted CyteArc DataStores that open and mount without downloading. Install with `pip install cytebase`.
 - [CyteType](https://www.nygen.io/docs/cytetype): evidence-backed cell type annotation for Scanpy and AnnData. Returns cell type, Cell Ontology ID, confidence, and an HTML report per cluster. Install with `pip install cytetype`.
 - [CyteTypeR](https://raw.githubusercontent.com/NygenAnalytics/CyteTypeR/master/README.md): the CyteType workflow for Seurat objects in R. Install with `devtools::install_github("NygenAnalytics/CyteTypeR")`.
 - [CyteOnto](https://raw.githubusercontent.com/NygenAnalytics/CyteOnto/master/README.md): semantic comparison of cell type labels against the Cell Ontology, for benchmarking annotation methods. Hosted API at https://cyteonto.nygen.io with no key required.
